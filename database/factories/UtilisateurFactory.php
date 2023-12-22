@@ -21,12 +21,12 @@ class UtilisateurFactory extends Factory
     public function definition(): array
     {
         return [
-            'nom_U' => $this->faker->lastName(),
-            'prenom_U' => $this->faker->firstName(),
-            'email_U' => $this->faker->unique()->safeEmail(),
-            'mdp_U' => $this->faker->password(),
-            'admin_U' => $this->faker->boolean(),
-            'recoit_news_U' => $this->faker->boolean(),
+            'nom_U' => 'admin',
+            'prenom_U' => 'admin',
+            'email_U' => 'admin@admin',
+            'mdp_U' => Hash::make('admin'),
+            'admin_U' => true,
+            'recoit_news_U' => false,
         ];
     }
 
