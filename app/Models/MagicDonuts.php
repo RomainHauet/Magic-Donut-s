@@ -12,6 +12,8 @@ class MagicDonuts extends Model
     protected $table = 'magic_donuts';
     protected $primaryKey = 'id';
 
+    public $incrementing = true;
+    
     public $timestamps = false;
 
     protected $fillable = [

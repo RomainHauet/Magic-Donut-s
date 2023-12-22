@@ -17,7 +17,6 @@ class ProduitFactory extends Factory
     public function definition(): array
     {
         return [
-            // lib_P doit contenir l'un des mots suivants : Donuts, Bubble Tea, Boisson, Milkshake, Magic Box
             'lib_P' => $this->faker->randomElement(['Donut', 'Bubble Tea', 'Boisson', 'Milkshake', 'Magic Box']),
             'gout_P' => $this->faker->randomElement(['Chocolat', 'Vanille', 'Fraise', 'Framboise']),
             'allergene_P' => $this->faker->randomElement(['Gluten', 'Lactose', 'Oeuf', 'Arachide']),
